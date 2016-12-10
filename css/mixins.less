@@ -31,6 +31,9 @@
           flex-direction: @direction;
 }
 
+
+
+
 // Flex Line Wrapping
 // - applies to: flex containers
 // nowrap | wrap | wrap-reverse
@@ -120,4 +123,12 @@
   -webkit-align-self: @align;
       -ms-align-self: @align;
           align-self: @align;
+}
+
+
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
 }
