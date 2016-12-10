@@ -37,7 +37,7 @@ html,
 body {
     height: 100%;
     font-family: "Crimson", "Arial", sans-serif;
-    background-color: @main_color;
+    background-color: @add_color;
 }
 ul {
 	padding:0;
@@ -51,3 +51,109 @@ a {
 		color: @link_hover_color;
 	}
 }
+
+
+// menu page
+
+.ma-descr{
+    .flex-display();
+    .flex-direction(column); 
+    .align-items(center);
+    text-align: center;
+    margin: auto;
+    background-image: url(../img/Gratia-transparent.png);
+    background-size:cover;
+    width: 33vw;
+    background-repeat: no-repeat;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    .ma-descr__title {
+        font: @header_font;
+    }
+
+    .ma-descr__text {
+        font: @text_font;
+        color: @add_color;
+        
+    }
+}
+
+
+.ma-menu {
+    .flex-display();
+    .flex-direction(column); 
+    background-color: @menu_color;
+    .justify-content(space-between);
+    
+    
+}
+
+.ma-row  {
+   .flex-display();
+   .justify-content(space-around);
+   margin-bottom: 5vh;
+}
+
+.ma-menu-item {
+    .box-shadow(0px 0px 71px -16px rgba(0,0,0,0.3));
+ width: 25%;
+ .flex-display();
+ .flex-direction(column);
+ .align-items(center);
+ background-color: @background_color;
+
+ .ma-menu-img {
+
+   .ma-menu__pic{
+       width: 100%;
+   }
+}
+.ma-menu__title {
+    font: @header_font;
+
+}
+
+.ma-menu__text{
+   text-align: center;
+   font: @text_font;
+   color: @add_color;
+
+}
+
+}
+
+
+.ma-footer {
+    .flex-display();
+    .flex-direction(column); 
+    .align-items(center);
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    
+     background-color: @menu_color;
+        .ma-footer__title {
+            font:@avg_font;
+            
+        }
+        .ma-footer__text {
+            font: @text_font;
+            color: @add_color;
+        }
+        
+        .ma-footer-icons{
+            .flex-display();
+            .flex-direction(row); 
+             .align-items(center);
+        }
+        .ma-footer-icons__icon {
+            color: @add_color;
+            margin:15px;
+            
+        }
+}
+
+.ma-footer-icons__icon:hover {
+    color: @link_hover_color;
+}
+

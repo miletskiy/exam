@@ -29,7 +29,7 @@ html,
 body {
   height: 100%;
   font-family: "Crimson", "Arial", sans-serif;
-  background-color: #151a28;
+  background-color: #8b909d;
 }
 ul {
   padding: 0;
@@ -41,5 +41,125 @@ a {
 }
 a:hover,
 a:active {
+  color: #d89b64;
+}
+.ma-descr {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-image: url(../img/Gratia-transparent.png);
+  background-size: cover;
+  width: 33vw;
+  background-repeat: no-repeat;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+.ma-descr .ma-descr__title {
+  font: 700 30px/70px "Montserrat";
+}
+.ma-descr .ma-descr__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.ma-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+.ma-menu-item {
+  -webkit-box-shadow: 0px 0px 71px -16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 71px -16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 71px -16px rgba(0, 0, 0, 0.3);
+  width: 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #fff;
+}
+.ma-menu-item .ma-menu-img .ma-menu__pic {
+  width: 100%;
+}
+.ma-menu-item .ma-menu__title {
+  font: 700 30px/70px "Montserrat";
+}
+.ma-menu-item .ma-menu__text {
+  text-align: center;
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100vw;
+  background-color: #fff;
+}
+.ma-footer .ma-footer__title {
+  font: 700 15px/20px "Montserrat";
+}
+.ma-footer .ma-footer__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-footer .ma-footer-icons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.ma-footer .ma-footer-icons__icon {
+  color: #8b909d;
+  margin: 15px;
+}
+.ma-footer-icons__icon:hover {
   color: #d89b64;
 }
