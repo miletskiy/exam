@@ -93,9 +93,10 @@ a:active {
   margin: 0;
   width: 30vw;
 }
-.ma-top-line .ma-top-menu .ma-menu-item .menu-item__link {
+.ma-top-line .ma-top-menu .ma-menu-li .ma-menu-item__link {
   display: block;
   padding-top: 32px;
+  font-weight: 700;
 }
 .ma-header-image {
   margin: auto;
@@ -315,5 +316,12 @@ a:active {
   margin: 15px;
 }
 .ma-footer-icons__icon:hover {
+  color: #d89b64;
+}
+.ma-menu .ma-container .ma-top-line--menu {
+  color: black;
+}
+.ma-menu .ma-container .ma-top-line--menu:hover,
+.ma-menu .ma-container .ma-top-line--menu:active {
   color: #d89b64;
 }

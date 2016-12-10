@@ -95,11 +95,12 @@ a {
 		.justify-content(space-between);
 		margin:0;
 		width: 30vw;
-		.ma-menu-item {
+		.ma-menu-li {
 
-			.menu-item__link{
+			.ma-menu-item__link{
 				display: block;
 				padding-top: 32px;
+				font-weight: 700;
 			}
 		}
 	}
@@ -320,4 +321,19 @@ a {
 	color: @link_hover_color;
 }
 
+.ma-menu{
+
+	.ma-container{
+
+		.ma-top-line--menu {
+			color:black;
+
+			&:hover,
+			&:active{
+				color: @sub_color;
+			}
+		}
+
+	}
+}
 // end menu page
