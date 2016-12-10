@@ -131,6 +131,72 @@ a:active {
   font-weight: 700;
   float: right;
 }
+.ma-perfection {
+  background-color: #fff;
+  text-align: center;
+}
+.ma-perfection .ma-perfection-head {
+  background-image: url(../img/Gratia-transparent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin: 10vh auto;
+  width: 33vw;
+  height: 22vh;
+}
+.ma-perfection .ma-perfection-head .ma-perfection__title {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  padding-top: 5vh;
+}
+.ma-perfection .ma-perfection-head .ma-perfection__text {
+  color: #8b909d;
+}
+.ma-perfection .ma-perfection-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-content: flex-end;
+  -ms-align-content: flex-end;
+  align-content: flex-end;
+  height: 75vh;
+}
+.ma-perfection .ma-perfection-row .ma-perfection-item {
+  width: 25vw;
+}
+.ma-perfection .ma-perfection-row .ma-perfection-item .ma-item__img {
+  width: 100%;
+}
+.ma-perfection .ma-perfection-link {
+  text-transform: uppercase;
+  color: #d89b64;
+  font-weight: 700;
+}
+.ma-perfection .ma-perfection-link:hover,
+.ma-perfection .ma-perfection-link:active {
+  text-decoration: underline;
+}
+.ma-details {
+  background-image: url(../img/Main-dtails_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+.ma-details .ma-details-block {
+  position: absolute;
+  text-align: center;
+}
+.ma-details .ma-details-block .ma-block__title {
+  text-transform: uppercase;
+}
+.ma-details .ma-details-block .ma-block__text {
+  color: #8b909d;
+}
 .ma-descr {
   display: -webkit-flex;
   display: -ms-flexbox;

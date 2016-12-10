@@ -144,6 +144,77 @@ a {
 	float: right;
 }
 
+.ma-perfection {
+	// height: 100vh;
+	background-color: @background_color;
+	text-align:center;
+	.ma-perfection-head {
+		background-image: url(../img/Gratia-transparent.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		margin: 10vh auto;
+		width: 33vw;
+		height: 22vh;
+
+		.ma-perfection__title{
+			text-transform: uppercase;
+			font-family: "Montserrat";
+			padding-top: 5vh;
+		}
+		.ma-perfection__text {
+			// font: @text_font;
+			color: @add_color;
+		}
+	}
+	.ma-perfection-row{
+		.flex-display();
+		.justify-content(space-between);
+		.align-content(flex-end);
+		height: 75vh;
+
+		.ma-perfection-item{
+			width: 25vw;
+
+			.ma-item__img{
+				width: 100%;
+			}
+
+		}
+	}
+	.ma-perfection-link {
+		text-transform: uppercase;
+		color: @sub_color;
+		// font:
+		font-weight: 700;
+
+		&:hover,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}
+
+.ma-details {
+	background-image:url(../img/Main-dtails_02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+
+	.ma-details-block{
+		position:absolute;
+		text-align: center;
+
+		.ma-block__title{
+			text-transform: uppercase;
+		}
+		.ma-block__text {
+			color:@add_color;
+		}
+	}
+}
+
 // End main page
 
 // menu page
@@ -215,7 +286,6 @@ a {
 
 }
 
-
 .ma-footer {
 	.flex-display();
 	.flex-direction(column);
@@ -249,3 +319,5 @@ a {
 .ma-footer-icons__icon:hover {
 	color: @link_hover_color;
 }
+
+// end menu page
