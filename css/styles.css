@@ -325,3 +325,61 @@ a:active {
 .ma-menu .ma-container .ma-top-line--menu:active {
   color: #d89b64;
 }
+.ma-burger {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 2em;
+  text-align: center;
+}
+.ma-burger .ma-burger__img {
+  background-image: url(../img/Meal-hambuerger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+.ma-burger-descr {
+  width: 50%;
+}
+.ma-burger-descr-two {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  padding: 4em;
+  border-top: 1px solid #8b909d;
+  border-bottom: 1px solid #8b909d;
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+.ma-burger-descr-one__item {
+  font: 700 30px/70px "Montserrat";
+}
+.ma-burger-descr-one__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-burger-descr-two__comp {
+  font: 700 15px/20px "Montserrat";
+}
+.ma-burger-descr-two__descr {
+  color: #8b909d;
+}
+.ma-burger-descr-three__title {
+  font: 700 30px/70px "Montserrat";
+  color: #a1b561;
+}
+.ma-burger-descr-three__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
