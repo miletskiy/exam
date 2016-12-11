@@ -409,6 +409,8 @@ a:active {
   flex-direction: row;
   margin: 2em;
   text-align: center;
+  width: 75%;
+  margin: auto;
 }
 .ma-burger .ma-burger__img {
   background-image: url(../img/Meal-hambuerger.jpg);
@@ -456,4 +458,119 @@ a:active {
 .ma-burger-descr-three__text {
   font: 14px "Crimson italic";
   color: #8b909d;
+}
+.ma-booking {
+  width: 75%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.ma-booking-date__half {
+  width: 49%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.ma-booking-date__day {
+  width: 30%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__text {
+  width: 30%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__year {
+  width: 30%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__hour {
+  width: 47%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__people {
+  width: 47%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__name {
+  width: 49%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  margin-bottom: 1.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__tel {
+  width: 49%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  margin-bottom: 1.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__email {
+  width: 49%;
+  font: 700 15px/20px "Montserrat";
+  color: black;
+  height: 2.5em;
+  margin-bottom: 1.5em;
+  background-color: white;
+  border: none;
+}
+.ma-booking-date__button {
+  width: 49%;
+  font: 700 15px/20px "Montserrat";
+  color: #fd8d7b;
+  height: 2.5em;
+  text-align: left;
+  background-color: black;
+  border: none;
+  margin-bottom: 1.5em;
+}
+.ma-booking-text__message {
+  width: 100%;
+  margin-bottom: 1.5em;
+  font: 700 15px/20px "Montserrat";
+  background-color: white;
+  border: none;
+}
+.ma-booking-text__button {
+  width: 100%;
+  font: 700 15px/20px "Montserrat";
+  color: white;
+  height: 2.5em;
+  background-color: #fd8d7b;
+  border: none;
 }
