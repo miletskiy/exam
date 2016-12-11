@@ -24,6 +24,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  transition: 0.5s ease;
 }
 html,
 body {
@@ -259,18 +260,48 @@ a:active {
   background-image: url(../img/Main-dtails_02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-  position: relative;
+  height: 64vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
 }
-.ma-details .ma-details-block {
-  position: absolute;
+.ma-details .ma-details-wrapper {
+  background-color: #fff;
+  margin: auto;
+  height: 60%;
+  width: 40%;
+  padding: 25px;
+}
+.ma-details .ma-details-wrapper .ma-details-block {
+  height: 100%;
   text-align: center;
+  border: 1px solid #ddd;
 }
-.ma-details .ma-details-block .ma-block__title {
+.ma-details .ma-details-wrapper .ma-details-block .ma-block__title {
   text-transform: uppercase;
+  font: 700 30px/70px "Montserrat";
+  margin-bottom: 10px;
 }
-.ma-details .ma-details-block .ma-block__text {
+.ma-details .ma-details-wrapper .ma-details-block .ma-block__text {
   color: #8b909d;
+  font: 14px "Crimson italic";
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.ma-details .ma-details-wrapper .ma-details-block .ma-block__button {
+  display: block;
+  width: 225px;
+  margin: auto;
+  text-transform: uppercase;
+  color: #d89b64;
+  padding: 20px 15px;
+  border: 1px solid #ddd;
+  font: 400 12px/1px "Montserrat";
+}
+.ma-details .ma-details-wrapper .ma-details-block .ma-block__button:hover {
+  color: #151a28;
+  border-color: #151a28;
 }
 .ma-descr {
   display: -webkit-flex;

@@ -35,6 +35,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    transition: 0.5s ease;
 }
 
 html,
@@ -261,16 +262,43 @@ a {
     background-image: url(../img/Main-dtails_02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    position: relative;
-    .ma-details-block {
-        position: absolute;
-        text-align: center;
-        .ma-block__title {
-            text-transform: uppercase;
-        }
-        .ma-block__text {
-            color: @add_color;
+    height: 64vh;
+    .flex-display();
+    .ma-details-wrapper {
+        background-color: @background_color;
+        margin: auto;
+        height: 60%;
+        width: 40%;
+        padding: 25px;
+        .ma-details-block {
+            height: 100%;
+            text-align: center;
+            border: 1px solid #ddd;
+            .ma-block__title {
+                text-transform: uppercase;
+                font: @header_font;
+                margin-bottom: 10px;
+            }
+            .ma-block__text {
+                color: @add_color;
+                font: @text_font;
+                margin-top: 0;
+                margin-bottom: 25px;
+            }
+            .ma-block__button {
+                display: block;
+                width: 225px;
+                margin: auto;
+                text-transform: uppercase;
+                color: @button_color;
+                padding: 20px 15px;
+                border: 1px solid #ddd;
+                font: @button_font;
+                &:hover {
+                    color: @button_hover_color;
+                    border-color: @button_hover_color;
+                }
+            }
         }
     }
 }
