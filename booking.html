@@ -12,6 +12,28 @@
 
 <body>
   <main class="ma-menu">
+    <div class="ma-container">
+      <nav class="ma-top-line ma-top--bottom-line">
+        <div class="ma-top-logo">
+          <div class="ma-logo__img"></div>
+          <a href="index.html" class="ma-logo__text ma-top-line--menu">Gratia</a>
+        </div>
+        <ul class="ma-top-menu ">
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link ma-top-line--menu" onClick="alert('Go to About page')" href="#">About</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link ma-top-line--menu" href="Menu.html">Menu</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link ma-top-line--menu" onClick="alert('Go to Gallery page')" href="#">Gallery</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link ma-top-line--menu" onClick="alert('Go to Contact page')" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="ma-descr">
       <h1 class="ma-descr__title">BOOK A TABLE</h1>
       <p class="ma-descr__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
@@ -20,29 +42,40 @@
       <form class="ma-booking-date" action="">
         <label>
           <div class="ma-booking-date__half">
-            <input class="ma-booking-date__day" value="DD" type="text" name="day" placeholder="DD">
-            <input class="ma-booking-date__text" value="MM" type="text" name="month" placeholder="MM">
-            <input class="ma-booking-date__year" value="YYYY" type="text" name="year" placeholder="YYYY">
+            <input class="ma-booking-date__day" value="" type="text" name="day" placeholder="DD">
+            <input class="ma-booking-date__text" value="" type="text" name="month" placeholder="MM">
+            <input class="ma-booking-date__year" value="" type="text" name="year" placeholder="YYYY">
           </div>
           <div class="ma-booking-date__half">
-            <input class="ma-booking-date__hour" value="HOUR" type="text" name="hour" placeholder="HOUR">
-            <input class="ma-booking-date__people" value="NUMBER OF PEOPLE" type="text" name="people" placeholder="NUMBER OF PEOPLE">
+            <input class="ma-booking-date__hour" value="" type="text" name="hour" placeholder="HOUR">
+            <input class="ma-booking-date__people" value="" type="text" name="people" placeholder="NUMBER OF PEOPLE">
           </div>
-          <input class="ma-booking-date__name" value="FIRST NAME AND LAST NAME" type="text" name="name" placeholder="FIRST NAME AND LAST NAME">
-          <input class="ma-booking-date__tel" value="PHONE NUMBER" type="tel" name="tel" placeholder="PHONE NUMBER">
-          <input class="ma-booking-date__email" value="E-MAIL" type="email" name="email" placeholder="E-MAIL">
+          <input class="ma-booking-date__name" value="" type="text" name="name" placeholder="FIRST NAME AND LAST NAME">
+          <input class="ma-booking-date__tel" value="" type="tel" name="tel" placeholder="PHONE NUMBER">
+          <input class="ma-booking-date__email" value="" type="email" name="email" placeholder="E-MAIL">
           <button class="ma-booking-date__button" type="submit">PREPARE MENU</button>
         </label>
       </form>
       <form class="ma-booking-text" action="">
-        <textarea class="ma-booking-text__message" cols="100" rows="10" maxlength="1000" name="comment">
-          Your message
+        <textarea class="ma-booking-text__message" rows="10" maxlength="1000" name="comment" placeholder="Your message">
+
         </textarea>
         <button class="ma-booking-text__button" type="submit">SEND</button>
       </form>
     </div>
+    <section class="ma-fork">
+      <div class="ma-fork-line">
+        <div class="ma-fork__img"></div>
+      </div>
+    </section>
+    <footer class="ma-footer">
+      <h2 class="ma-footer__title">Gratia Restaurant</h2>
+      <p class="ma-footer__text">Copyright 2016. All rights reserved by symu</p>
+      <div class="ma-footer-icons">
+        <a class=" ma-footer-icons__icon" href="#"><i class=" fa fa-facebook fa-2x"  aria-hidden="true"></i></a>
+        <a class=" ma-footer-icons__icon" href="#"><i class=" fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a class=" ma-footer-icons__icon" href="#"><i class="  fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </footer>
   </main>
 </body>
-<!-- <form action="/example/handler.php">
-   <p><input name="login"> <input type="password" name="pass"></p>
-   <p><input type="submit"></p> -->

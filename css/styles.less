@@ -381,6 +381,34 @@ a {
     }
 }
 
+.ma-fork {
+    height: 30vh;
+    .ma-fork-line {
+        position: relative;
+        margin: auto;
+        width: 90%;
+        height: 1px;
+        background-color: #ddd;
+        top: 50%;
+        .ma-fork__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: @fork;
+            width: @fork;
+            background-image: url(../img/Logo.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 50% 50%;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            margin-left: -@fork/2;
+            margin-top: -@fork/2;
+        }
+    }
+}
+
 // End main page
 // menu page
 .ma-descr {
@@ -552,7 +580,7 @@ a {
 //burger page end
 // booking start
 .ma-booking {
-    width: 75%;
+    width: 60%;
     margin: auto;
     .flex-display();
     .flex-direction(column);
@@ -564,14 +592,9 @@ a {
     .flex-direction(row);
     justify-content: space-between;
     margin-bottom: 1.5em;
+
 }
 
-// .ma-booking-date {
-//     .flex-display();
-//     .flex-direction(column);
-//     -webkit-justify-content: space-between;
-//             justify-content: space-between;
-// }
 .ma-booking-date__day {
     width: 30%;
     font: @avg_font;
@@ -579,6 +602,9 @@ a {
     height: 2.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__text {
@@ -588,6 +614,9 @@ a {
     height: 2.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__year {
@@ -597,6 +626,9 @@ a {
     height: 2.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__hour {
@@ -606,6 +638,9 @@ a {
     height: 2.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__people {
@@ -615,6 +650,9 @@ a {
     height: 2.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__name {
@@ -625,6 +663,9 @@ a {
     margin-bottom: 1.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__tel {
@@ -635,6 +676,9 @@ a {
     margin-bottom: 1.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__email {
@@ -645,12 +689,15 @@ a {
     margin-bottom: 1.5em;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-date__button {
     width: 49%;
     font: @avg_font;
-    color: @button_active;
+    color: @button_color;
     height: 2.5em;
     text-align: left;
     background-color: black;
@@ -664,6 +711,9 @@ a {
     font: @avg_font;
     background-color: white;
     border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
 }
 
 .ma-booking-text__button {
@@ -671,7 +721,7 @@ a {
     font: @avg_font;
     color: white;
     height: 2.5em;
-    background-color: @button_active;
+    background-color: @button_color;
     border: none;
 }
 
