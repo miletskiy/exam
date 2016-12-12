@@ -35,7 +35,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 html,
@@ -80,7 +80,8 @@ a {
         position: relative;
         height: 100%;
         .ma-logo__text {
-            margin-left: 5vw;
+            display: block;
+            margin: 1.5rem 5vw;
             font-family: "Montserrat";
             color: #fff;
             font-weight: 700;
@@ -106,9 +107,16 @@ a {
                 display: block;
                 padding-top: 32px;
                 font-weight: 700;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
+}
+
+.ma-top--bottom-line {
+    border-bottom: 1px solid @grey;
 }
 
 .ma-header-image {
@@ -146,6 +154,11 @@ a {
     font-family: "Montserrat";
     font-weight: 700;
     float: right;
+    &:hover,
+    &:active {
+        color: @add_color;
+        border-color: @add_color;
+    }
 }
 
 .ma-section {
@@ -161,7 +174,7 @@ a {
         background-repeat: no-repeat;
         background-size: 100%;
         margin: auto;
-        width: 40vw;
+        width: 35vw;
         height: 23vh;
         .ma-perfection__title {
             text-transform: uppercase;
@@ -273,7 +286,7 @@ a {
         .ma-details-block {
             height: 100%;
             text-align: center;
-            border: 1px solid #ddd;
+            border: 1px solid @grey;
             .ma-block__title {
                 text-transform: uppercase;
                 font: @header_font;
@@ -292,7 +305,7 @@ a {
                 text-transform: uppercase;
                 color: @button_color;
                 padding: 20px 15px;
-                border: 1px solid #ddd;
+                border: 1px solid @grey;
                 font: @button_font;
                 &:hover {
                     color: @button_hover_color;
@@ -310,7 +323,7 @@ a {
         background-repeat: no-repeat;
         background-size: 100%;
         margin: auto;
-        width: 40vw;
+        width: 35vw;
         height: 23vh;
         .ma-perfection__title {
             text-transform: uppercase;
@@ -377,13 +390,14 @@ a {
     text-align: center;
     margin: auto;
     background-image: url(../img/Gratia-transparent.png);
-    background-size: cover;
-    width: 33vw;
     background-repeat: no-repeat;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+    background-size: 100%;
+    width: 35vw;
+    height: 23vh;
+    margin: 5vh auto;
     .ma-descr__title {
         font: @header_font;
+        margin-bottom: 0;
     }
     .ma-descr__text {
         font: @text_font;
@@ -409,11 +423,14 @@ a {
     0,
     0,
     0.3));
-    width: 25%;
+    width: 27%;
     .flex-display();
     .flex-direction(column);
     .align-items(center);
     background-color: @background_color;
+    &:hover {
+        .box-shadow(@box_shadow);
+    }
     .ma-menu-img {
         .ma-menu__pic {
             width: 100%;
