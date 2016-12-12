@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Starter template</title>
+  <title>Gratia</title>
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="css/normalize.css" rel="stylesheet" type="text/css" />
@@ -11,7 +11,111 @@
 </head>
 
 <body>
-
+  <header class="ma-header">
+    <div class="ma-container">
+      <nav class="ma-top-line">
+        <div class="ma-top-logo">
+          <div class="ma-logo__img"></div>
+          <a href="index.html" class="ma-logo__text">Gratia</a>
+        </div>
+        <ul class="ma-top-menu">
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link" href="menu-page.html">About</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link" href="Menu.html">Menu</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link" onClick="alert('Go to Gallery page')" href="#">Gallery</a>
+          </li>
+          <li class="ma-menu-li">
+            <a class="ma-menu-item__link" onClick="alert('Go to Contact page')" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="ma-header-image">
+        <img class="ma-image__pic" src="img/main_logo_02.png">
+      </div>
+      <p class="ma-header__text">and perfection is not a detail </p>
+      <a href="booking.html" class="ma-header__button">book a table</a>
+    </div>
+  </header>
+  <section class="ma-section ma-perfection">
+    <div class="ma-perfection-head">
+      <h1 class="ma-perfection__title">perfection</h1>
+      <p class="ma-perfection__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="ma-perfection-row">
+      <div class="ma-perfection-item">
+        <div class="ma-item-cover">
+          <h1 class="ma-cover__title">deserts</h1>
+          <div class="ma-cover__line"></div>
+          <p class="ma-cover__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img class="ma-item__img" src="img/Main-desserts.png">
+      </div>
+      <div class="ma-perfection-item">
+        <div class="ma-item-cover ma-cover--center">
+          <h1 class="ma-cover__title">smoothies</h1>
+          <div class="ma-cover__line"></div>
+          <p class="ma-cover__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img class="ma-item__img" src="img/Main-Smoothies_03.jpg">
+      </div>
+      <div class="ma-perfection-item">
+        <div class="ma-item-cover">
+          <h1 class="ma-cover__title">breakfast</h1>
+          <div class="ma-cover__line"></div>
+          <p class="ma-cover__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img class="ma-item__img" src="img/Main-breakfas.png">
+      </div>
+    </div>
+    <a class="ma-perfection-link" href="Menu.html">check other offers</a>
+  </section>
+  <section class="ma-details">
+    <div class="ma-details-wrapper">
+      <div class="ma-details-block">
+        <h1 class="ma-block__title">details</h1>
+        <p class="ma-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" onClick="alert('Go to Gallery page')" class="ma-block__button">preparation of our dishes</a>
+      </div>
+    </div>
+  </section>
+  <section class="ma-section ma-reach">
+    <div class="ma-reach-head">
+      <h1 class="ma-perfection__title">how we reach this?</h1>
+      <p class="ma-perfection__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="ma-reach-row">
+      <div class="ma-reach-item ma-reach--item4">
+        <h2 class="ma-reach__title">different locations</h2>
+        <p class="ma-reach__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="ma-reach-item ma-reach--item532">
+        <h2 class="ma-reach__title">fresh products</h2>
+        <p class="ma-reach__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="ma-reach-item ma-reach--item16">
+        <h2 class="ma-reach__title">the best from the beggining</h2>
+        <p class="ma-reach__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+  <section class="ma-fork">
+    <div class="ma-fork-line">
+      <div class="ma-fork__img"></div>
+    </div>
+  </section>
+  <footer class="ma-footer">
+    <h2 class="ma-footer__title">Gratia Restaurant</h2>
+    <p class="ma-footer__text">Copyright 2016. All rights reserved by symu</p>
+    <div class="ma-footer-icons">
+      <a class=" ma-footer-icons__icon" href="#"><i class=" fa fa-facebook fa-2x"  aria-hidden="true"></i></a>
+      <a class=" ma-footer-icons__icon" href="#"><i class=" fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a class=" ma-footer-icons__icon" href="#"><i class="  fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </div>
+  </footer>
 </body>
 
 </html>

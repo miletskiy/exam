@@ -1,19 +1,727 @@
-
 @import "variables.less";
 @import "mixins.less";
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/* font-family: "Crimson Regular"; */
+
+@font-face {
+    font-family: "Crimson";
+    src: url("../fonts/crimson/crimson-roman-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "Crimson Bold"; */
+
+@font-face {
+    font-family: "Crimson Bold";
+    src: url("../fonts/crimson/crimson-bold-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* font-family: "Crimson Italic"; */
+
+@font-face {
+    font-family: "Crimson Italic";
+    src: url("../fonts/crimson/crimson-italic-webfont.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
 
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    transition: 0.3s ease;
 }
 
 html,
 body {
     height: 100%;
-    font-family: "Raleway", "Arial", sans-serif;
+    font-family: "Crimson", "Arial", sans-serif;
     background-color: @background_color;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+    color: @link_color;
+    &:hover,
+    &:active {
+        color: @link_hover_color;
+    }
+}
+
+// Main page
+.ma-header {
+    background-color: @main_color;
+    height: 100%;
+}
+
+.ma-container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.ma-top-line {
+    // background: @add_color;
+    height: 80px;
+    .flex-display();
+    .justify-content(space-between);
+    .ma-top-logo {
+        position: relative;
+        height: 100%;
+        .ma-logo__text {
+            display: block;
+            margin: 1.5rem 5vw;
+            font-family: "Montserrat";
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .ma-logo__img {
+            background-image: url("../img/Logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            top: 15px;
+            position: absolute;
+        }
+    }
+    .ma-top-menu {
+        .flex-display();
+        .justify-content(space-between);
+        margin: 0;
+        width: 30vw;
+        .ma-menu-li {
+            .ma-menu-item__link {
+                display: block;
+                padding-top: 32px;
+                font-weight: 700;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.ma-top--bottom-line {
+    border-bottom: 1px solid @grey;
+}
+
+.ma-header-image {
+    margin: auto;
+    width: 50vw;
+    .ma-image__pic {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ma-header__text {
+    color: @header_color;
+    text-align: center;
+    font-style: italic;
+    &:after {
+        content: '\f176';
+        display: block;
+        position: absolute;
+        transform: rotate(180deg);
+        right: 50%;
+        top: 102%;
+        font-style: normal;
+        font-family: fontawesome;
+    }
+}
+
+.ma-header__button {
+    display: block;
+    padding: 10px 20px;
+    color: @sub_color;
+    border: 1px solid @header_color;
+    text-transform: uppercase;
+    width: 165px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    float: right;
+    &:hover,
+    &:active {
+        color: @add_color;
+        border-color: @add_color;
+    }
+}
+
+.ma-section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.ma-perfection {
+    background-color: @background_color;
+    text-align: center;
+    .ma-perfection-head {
+        background-image: url(../img/Gratia-transparent.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: auto;
+        width: 35vw;
+        height: 23vh;
+        .ma-perfection__title {
+            text-transform: uppercase;
+            font-family: "Montserrat";
+            padding-top: 5vh;
+            margin: auto;
+        }
+        .ma-perfection__text {
+            font: @text_font;
+            color: @add_color;
+        }
+    }
+    .ma-perfection-row {
+        .flex-display();
+        .align-items(center);
+        height: 75vh;
+        margin-top: 10vh;
+        .ma-perfection-item {
+            position: relative;
+            &:nth-child(2) {
+                margin: 0 4vw;
+            }
+            &:hover {
+                .box-shadow(@box_shadow);
+            }
+            &:hover .ma-item__img {
+                // height: 60vh;
+            }
+            .ma-item-cover {
+                position: absolute;
+                background-color: @background_rgba_color;
+                width: 100%;
+                height: 100%;
+                .flex-display();
+                .align-items(center);
+                .justify-content(center);
+                .flex-direction(column);
+                .ma-cover__title {
+                    text-transform: uppercase;
+                    font: @header_font;
+                    color: @sub_color;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                }
+                .ma-cover__line {
+                    width: 3vw;
+                    background-color: @sub_color;
+                    height: 1px;
+                }
+                .ma-cover__text {
+                    font: @text_font;
+                    color: @menu_color;
+                    margin-top: 3vh;
+                }
+            }
+            .ma-cover--center {
+                .justify-content(flex-end);
+                padding-bottom: 3vh;
+                background: none;
+                .ma-cover__title {
+                    color: initial;
+                }
+                .ma-cover__line {
+                    background-color: @menu_color;
+                }
+                .ma-cover__text {
+                    color: @add_color;
+                }
+            }
+            .ma-item__img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .ma-perfection-link {
+        text-transform: uppercase;
+        color: @button_color;
+        font: @avg_font;
+        font-weight: 700;
+        display: block;
+        border-bottom: 1px solid @button_color;
+        width: 215px;
+        margin: auto;
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: @main_color;
+            border-color: @main_color;
+        }
+    }
+}
+
+.ma-details {
+    background-image: url(../img/Main-dtails_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64vh;
+    .flex-display();
+    .ma-details-wrapper {
+        background-color: @background_color;
+        margin: auto;
+        height: 60%;
+        width: 40%;
+        padding: 25px;
+        .ma-details-block {
+            height: 100%;
+            text-align: center;
+            border: 1px solid @grey;
+            .ma-block__title {
+                text-transform: uppercase;
+                font: @header_font;
+                margin-bottom: 10px;
+            }
+            .ma-block__text {
+                color: @add_color;
+                font: @text_font;
+                margin-top: 0;
+                margin-bottom: 25px;
+            }
+            .ma-block__button {
+                display: block;
+                width: 225px;
+                margin: auto;
+                text-transform: uppercase;
+                color: @button_color;
+                padding: 20px 15px;
+                border: 1px solid @grey;
+                font: @button_font;
+                &:hover {
+                    color: @button_hover_color;
+                    border-color: @button_hover_color;
+                }
+            }
+        }
+    }
+}
+
+.ma-reach {
+    text-align: center;
+    .ma-reach-head {
+        background-image: url(../img/Gratia-transparent.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: auto;
+        width: 35vw;
+        height: 23vh;
+        .ma-perfection__title {
+            text-transform: uppercase;
+            font-family: "Montserrat";
+            padding-top: 5vh;
+            margin: auto;
+        }
+        .ma-perfection__text {
+            font: @text_font;
+            color: @add_color;
+        }
+    }
+    .ma-reach-row {
+        .flex-display();
+        .align-items(center);
+        height: 35vh;
+        margin-top: 10vh;
+        .ma-reach-item {
+            background-color: #f6f6f6;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 100%;
+            .flex-display();
+            .align-items(center);
+            .justify-content(center);
+            .flex-direction(column);
+            &:hover {
+                .box-shadow(@box_shadow);
+            }
+            .ma-reach__title {
+                text-transform: uppercase;
+                font: @avg_font;
+                color: @sub_color;
+            }
+            .ma-reach__text {
+                font: @text_font;
+                color: @add_color;
+            }
+        }
+        .ma-reach--item4 {
+            background-image: url(../img/4.png);
+            background-size: 12%;
+        }
+        .ma-reach--item532 {
+            background: linear-gradient( rgba(21, 26, 40, 0.9), rgba(21, 26, 40, 0.9)), url(../img/532.png) 50% no-repeat;
+            margin: 0 3vw;
+            height: 100%;
+        }
+        .ma-reach--item16 {
+            background-image: url(../img/16.png);
+            background-size: 25%;
+        }
+    }
+}
+
+.ma-fork {
+    height: 30vh;
+    .ma-fork-line {
+        position: relative;
+        margin: auto;
+        width: 90%;
+        height: 1px;
+        background-color: #ddd;
+        top: 50%;
+        .ma-fork__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: @fork;
+            width: @fork;
+            background-image: url(../img/Logo.png);
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 50% 50%;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            margin-left: -@fork/2;
+            margin-top: -@fork/2;
+        }
+    }
+}
+
+// End main page
+// menu page
+.ma-descr {
+    .flex-display();
+    .flex-direction(column);
+    .align-items(center);
+    text-align: center;
+    margin: auto;
+    background-image: url(../img/Gratia-transparent.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35vw;
+    height: 23vh;
+    margin: 5vh auto;
+    .ma-descr__title {
+        font: @header_font;
+        margin-bottom: 0;
+    }
+    .ma-descr__text {
+        font: @text_font;
+        color: @add_color;
+    }
+}
+
+.ma-menu {
+    .flex-display();
+    .flex-direction(column);
+    background-color: @menu_color;
+    .justify-content(space-between);
+}
+
+.ma-row {
+    .flex-display();
+    .justify-content(space-around);
+    margin-bottom: 5vh;
+}
+
+.ma-menu-item {
+    .box-shadow(0px 0px 71px -16px rgba(0,
+    0,
+    0,
+    0.3));
+    width: 27%;
+    .flex-display();
+    .flex-direction(column);
+    .align-items(center);
+    background-color: @background_color;
+    &:hover {
+        .box-shadow(@box_shadow);
+    }
+    .ma-menu-img {
+        .ma-menu__pic {
+            width: 100%;
+        }
+    }
+    .ma-menu__title {
+        font: @header_font;
+    }
+    .ma-menu__text {
+        text-align: center;
+        font: @text_font;
+        color: @add_color;
+    }
+}
+
+.ma-footer {
+    .flex-display();
+    .flex-direction(column);
+    .align-items(center);
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    background-color: @menu_color;
+    .ma-footer__title {
+        font: @avg_font;
+    }
+    .ma-footer__text {
+        font: @text_font;
+        color: @add_color;
+    }
+    .ma-footer-icons {
+        .flex-display();
+        .flex-direction(row);
+        .align-items(center);
+    }
+    .ma-footer-icons__icon {
+        color: @add_color;
+        margin: 15px;
+    }
+}
+
+.ma-footer-icons__icon:hover {
+    color: @link_hover_color;
+}
+
+.ma-menu {
+    .ma-container {
+        .ma-top-line--menu {
+            color: black;
+            &:hover,
+            &:active {
+                color: @sub_color;
+            }
+        }
+    }
+}
+
+// menu page end
+//burger page
+.ma-burger {
+    .flex-display();
+    .flex-direction(row);
+    margin: 2em;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    .ma-burger__img {
+        background-image: url(../img/Meal-hambuerger.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+    }
+}
+
+.ma-burger-descr {
+    width: 50%;
+}
+
+.ma-burger-descr-two {
+    .flex-display();
+    .flex-direction(row);
+    justify-content: space-between;
+    text-align: left;
+    padding: 4em;
+    border-top: 1px solid @add_color;
+    border-bottom: 1px solid @add_color;
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+.ma-burger-descr-one__item {
+    font: @header_font;
+}
+
+.ma-burger-descr-one__text {
+    font: @text_font;
+    color: @add_color;
+}
+
+.ma-burger-descr-two__comp {
+    font: @avg_font;
+}
+
+.ma-burger-descr-two__descr {
+    color: @add_color;
+}
+
+.ma-burger-descr-three__title {
+    font: @header_font;
+    color: #a1b561;
+}
+
+.ma-burger-descr-three__text {
+    font: @text_font;
+    color: @add_color;
+}
+
+//burger page end
+// booking start
+.ma-booking {
+    width: 60%;
+    margin: auto;
+    .flex-display();
+    .flex-direction(column);
+}
+
+.ma-booking-date__half {
+    width: 49%;
+    .flex-display(inline-flex);
+    .flex-direction(row);
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.ma-booking-date__day {
+    width: 30%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__text {
+    width: 30%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__year {
+    width: 30%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__hour {
+    width: 47%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__people {
+    width: 47%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__name {
+    width: 49%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__tel {
+    width: 49%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__email {
+    width: 49%;
+    font: @avg_font;
+    color: black;
+    height: 2.5em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-date__button {
+    width: 49%;
+    font: @avg_font;
+    color: @button_color;
+    height: 2.5em;
+    text-align: left;
+    background-color: black;
+    border: none;
+    margin-bottom: 1.5em;
+}
+
+.ma-booking-text__message {
+    width: 100%;
+    margin-bottom: 1.5em;
+    font: @avg_font;
+    background-color: white;
+    border: none;
+    .box-shadow(@box_shadow_form);
+    outline-color: @sub_color;
+    outline-width: 2px;
+}
+
+.ma-booking-text__button {
+    width: 100%;
+    font: @avg_font;
+    color: white;
+    height: 2.5em;
+    background-color: @button_color;
+    border: none;
+}
+
+//booking end
