@@ -303,6 +303,86 @@ a:active {
   color: #151a28;
   border-color: #151a28;
 }
+.ma-reach {
+  text-align: center;
+}
+.ma-reach .ma-reach-head {
+  background-image: url(../img/Gratia-transparent.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  width: 40vw;
+  height: 23vh;
+}
+.ma-reach .ma-reach-head .ma-perfection__title {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  padding-top: 5vh;
+  margin: auto;
+}
+.ma-reach .ma-reach-head .ma-perfection__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-reach .ma-reach-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 35vh;
+  margin-top: 10vh;
+}
+.ma-reach .ma-reach-row .ma-reach-item {
+  background-color: #f6f6f6;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 70%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.ma-reach .ma-reach-row .ma-reach-item:hover {
+  -webkit-box-shadow: 0px 0px 42px 5px rgba(21, 26, 40, 0.5);
+  -moz-box-shadow: 0px 0px 42px 5px rgba(21, 26, 40, 0.5);
+  box-shadow: 0px 0px 42px 5px rgba(21, 26, 40, 0.5);
+}
+.ma-reach .ma-reach-row .ma-reach-item .ma-reach__title {
+  text-transform: uppercase;
+  font: 700 15px/20px "Montserrat";
+  color: #d89b64;
+}
+.ma-reach .ma-reach-row .ma-reach-item .ma-reach__text {
+  font: 14px "Crimson italic";
+  color: #8b909d;
+}
+.ma-reach .ma-reach-row .ma-reach--item4 {
+  background-image: url(../img/4.png);
+  background-size: 12%;
+}
+.ma-reach .ma-reach-row .ma-reach--item532 {
+  background: linear-gradient(rgba(21, 26, 40, 0.9), rgba(21, 26, 40, 0.9)), url(../img/532.png) 50% no-repeat;
+  margin: 0 3vw;
+  height: 100%;
+}
+.ma-reach .ma-reach-row .ma-reach--item16 {
+  background-image: url(../img/16.png);
+  background-size: 25%;
+}
 .ma-descr {
   display: -webkit-flex;
   display: -ms-flexbox;

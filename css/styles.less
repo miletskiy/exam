@@ -303,6 +303,71 @@ a {
     }
 }
 
+.ma-reach {
+    text-align: center;
+    .ma-reach-head {
+        background-image: url(../img/Gratia-transparent.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: auto;
+        width: 40vw;
+        height: 23vh;
+        .ma-perfection__title {
+            text-transform: uppercase;
+            font-family: "Montserrat";
+            padding-top: 5vh;
+            margin: auto;
+        }
+        .ma-perfection__text {
+            font: @text_font;
+            color: @add_color;
+        }
+    }
+    .ma-reach-row {
+        .flex-display();
+        .align-items(center);
+        height: 35vh;
+        margin-top: 10vh;
+        .ma-reach-item {
+            background-color: #f6f6f6;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 100%;
+            .flex-display();
+            .align-items(center);
+            .justify-content(center);
+            .flex-direction(column);
+            &:hover {
+                .box-shadow(@box_shadow);
+            }
+            .ma-reach__title {
+                text-transform: uppercase;
+                font: @avg_font;
+                color: @sub_color;
+            }
+            .ma-reach__text {
+                font: @text_font;
+                color: @add_color;
+            }
+        }
+        .ma-reach--item4 {
+            background-image: url(../img/4.png);
+            background-size: 12%;
+        }
+        .ma-reach--item532 {
+            background: linear-gradient( rgba(21, 26, 40, 0.9), rgba(21, 26, 40, 0.9)), url(../img/532.png) 50% no-repeat;
+            margin: 0 3vw;
+            height: 100%;
+        }
+        .ma-reach--item16 {
+            background-image: url(../img/16.png);
+            background-size: 25%;
+        }
+    }
+}
+
 // End main page
 // menu page
 .ma-descr {
