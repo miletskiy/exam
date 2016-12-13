@@ -86,6 +86,9 @@ a {
             color: #fff;
             font-weight: 700;
             font-size: 1.5rem;
+            &:hover{
+                color: @sub_color;
+            }
         }
         .ma-logo__img {
             background-image: url("../img/Logo.png");
@@ -94,6 +97,7 @@ a {
             height: 50px;
             width: 50px;
             top: 15px;
+            left: 0;
             position: absolute;
         }
     }
@@ -117,6 +121,11 @@ a {
 
 .ma-top--bottom-line {
     border-bottom: 1px solid @grey;
+    .ma-top-logo {
+        .ma-logo__text {
+            color: #000;
+        }
+    }
 }
 
 .ma-header-image {
